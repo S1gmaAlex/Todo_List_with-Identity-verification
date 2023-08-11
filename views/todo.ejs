@@ -1,0 +1,41 @@
+<%- include('component/header'); -%>
+
+    <div class="container">
+        <div class="task-container">
+            <h1 class="title">Todo App</h1>
+            <% if(locals.user) { %>
+                <form class="task-form" action="/todo/create" method="post">
+                    <input class="submitInput" type="text" name="title" placeholder="Add your new to do">
+                    <button class="submitBtn" type="submit">+</button>
+                </form>
+                <% for(let i=0; i < user.task.length; i++) { %>
+                    <div class="task-list">
+                        <tr>
+                            <div class="task-title">
+                                <td>
+                                    <%= user.task[i]%>
+                                </td>
+                            </div>
+                            <div class="task-actions">
+                                <form action="/todo/delete/<%=user.todo[i]%>" method="get">
+                                    <button class="deleteBtn" type="submit">
+                                        <i class="fa-solid fa-trash" style="color: #f6f6fe;"></i>
+                                    </button>
+                                </form>
+                            </div>
+
+                        </tr>
+                    </div>
+                    <%}%>
+                        <div class="exterminate">
+                            <h4 class="title">You have <%=user.task.length %> pending tasks</h4>
+                            <div>
+                                <form action="/todo/deleteAll/" method="get">
+                                    <button class="deleteAllBtn" type="submit">Clear All</button>
+                                </form>
+                            </div>
+                        </div>
+                        <%}%>
+        </div>
+    </div>
+    <%- include('component/footer'); -%>

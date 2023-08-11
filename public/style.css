@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #AAC9FF;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+
+    font-size: 50px;
+    margin: 20px 0 20px 0;
+}
+
+.auth {
+    display: flex;
+    margin: 20px 0 20px 0;
+}
+
+li {
+    font-size: 25px;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+a {
+    color: black;
+}
+
+header {
+    text-align: center;
+    font-size: 30px;
+}
+
+.view:hover {
+    opacity: 0.8;
+    color: #446079;
+    transition: 0.2s;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+}
+
+.loginHover:hover {
+    opacity: 0.8;
+    color: rgb(60, 156, 216);
+    transition: 0.2s;
+}
+
+.signupHover:hover {
+    opacity: 0.8;
+    color: rgb(210, 56, 56);
+    transition: 0.2s;
+}
+
+.logoutHover:hover {
+    opacity: 0.8;
+    color: rgb(210, 56, 56);
+    transition: 0.2s;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.email,
+password {
+    margin-top: 20px;
+}
+
+.emailInput {
+    border: 0;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 50px;
+    width: 500px;
+    margin-left: 55px;
+    padding-left: 10px;
+}
+
+.passwordInput {
+    border: 0;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 50px;
+    width: 500px;
+    padding-left: 10px;
+}
+
+label {
+    font-size: 30px;
+}
+
+#emailErr {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(228, 64, 64);
+}
+
+#passwordErr {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(228, 64, 64);
+}
+
+.loginBtn {
+    font-size: 30px;
+    margin: 20px 0 0px 270px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.signupBtn {
+    font-size: 30px;
+    border: 0;
+    margin: 20px 0 0px 270px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    height: auto;
+}
+
+.task-container {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.submitInput {
+    border: 1 solid black;
+    padding-left: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 50px;
+    width: 500px;
+}
+
+.title {
+    margin-left: 20px;
+}
+
+.task-form {
+    margin: 10px;
+}
+
+.submitBtn {
+    background-color: rgb(155, 18, 155);
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border: 0;
+}
+
+
+.task-list {
+    display: flex;
+    background-color: #f7f3f3;
+    justify-content: space-between;
+    margin: 20px 10px 20px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.task-title {
+    padding-top: 7px;
+}
+
+.task-actions {
+    display: block;
+}
+
+.deleteBtn {
+    background-color: #f7f3f3;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    height: 40px;
+    width: 50px;
+}
+
+.deleteBtn:hover {
+    background-color: rgb(199, 66, 17);
+    transition: 0.7s;
+}
+
+.exterminate {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px 20px 10px;
+    font-size: 20px;
+}
+
+.title {
+    padding-top: 7px;
+    font-weight: normal;
+}
+
+.deleteAllBtn {
+    background-color: rgb(155, 18, 155);
+    color: white;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    height: 40px;
+    width: 100px;
+}
